@@ -23,7 +23,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 35vw;
+    width: 40vw;
     height: 100vh;
     margin: 0px;
     padding: 0px;
@@ -60,6 +60,34 @@ a {
 #logo-text {
     font-family: "Norse Bold";
     font-size: 100px;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfafa;
+}
+
+#top-form-info {
+    margin: 150px 350px 50px 50px;
+    font-size: 30px;
+    font-style: normal;
+}
+
+#bottom-form-info {
+    margin: 0px 350px 75px 50px;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.right-form {
+    background-color: white;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.bottom-right {
+    background-color: #fbfafa;
 }
 
 label,input {
