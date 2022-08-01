@@ -11,8 +11,8 @@
     <div class="site-container">
         <div class="left-page">
             <div class="logo">
-                <div class="logo-image"></div>
-                <div class="logo-text">ODIN</div>
+                <div id="logo-image"></div>
+                <div id="logo-text">ODIN</div>
             </div>
             <div class="left-footer">
                 <p id="footer-text">Photo by <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank" rel="noopener noreferrer">Halie West</a> 
@@ -28,12 +28,33 @@
                     <h2 class="form-title">Let's do this!</h2>
                 </div>
                 <div class="right-form">
-                    <button id="create-account-btn">Create Account</button>
-                    <p id="log-in-text">Already have an account? <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Log in</a></p>
+                    <form action="example.com" method="post">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+
+                      
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+
+                 
+
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="password">
+
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="text" id="confirm=password" name="confirm-password">
+                    </form>
                 </div>
             </div>
             <div class="bottom-right">
-
+                <button id="create-account-btn">Create Account</button>
+                <p id="log-in-text">Already have an account? <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Log in</a></p>
             </div>
         </div>
     </div>

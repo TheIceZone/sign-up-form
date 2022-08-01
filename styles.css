@@ -1,9 +1,73 @@
 @font-face {
     font-family: "Norse Bold";
-    src: url(assets/Norse-Bold.otf);
+    src: url('/assets/Norse-Bold.otf') format("opentype");
+    src: url('/assets/norse-bold-webfont.woff') format("woff");
+    font-style: bold;
 }
 
-* {
-    font: Helvetica, sans-serif;
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
+a {
+    color: inherit ;
+}
+
+.site-container {
+    display: flex;
+}
+
+.left-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 35vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(assets/photo-1585202900225-6d3ac20a6962.avif);
+}
+
+.left-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    background: rgba(0,0,0,.5);
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60vh;
+    flex-grow: 0;
+}
+
+#logo-image {
+    content: url(/assets/odin-lined.png);
+    padding: 10px;
+    margin: 0px;
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+}
+
+#logo-text {
+    font-family: "Norse Bold";
+    font-size: 100px;
+}
+
+label,input {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-form {
+    float: left;
+    display: block;
 }
