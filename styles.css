@@ -5,13 +5,41 @@
     font-style: bold;
 }
 
+* {
+    font: Helvetica, sans-serif;
+}
+
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #fbfafa;
 }
 
 a {
     color: inherit ;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width : 250px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFFEFA;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: 0px 3px 5px lightgray, 0px -3px 5px lightgray;
+    outline: none;
+    border: 1px solid blue;
+}
+
+input:invalid.error {
+    outline: none;
+    border: 1px solid red;
 }
 
 .site-container {
@@ -23,7 +51,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
     margin: 0px;
     padding: 0px;
@@ -69,7 +97,7 @@ a {
 }
 
 #top-form-info {
-    margin: 150px 350px 50px 50px;
+    margin: 100px 350px 50px 50px;
     font-size: 30px;
     font-style: normal;
 }
@@ -82,20 +110,58 @@ a {
 
 .right-form {
     background-color: white;
+    padding-left: 50px;
     font-size: 25px;
+    float: left;
+    display: block;
+    margin: 0px 0px 40px 0px;
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 5px lightgray, 0px -4px 5px lightgray;
+}
+
+.col1 {
+    float: left;
+    width: 350px;
+}
+  
+.col2 {
+    float: left;
+    width: 350px;
+}
+input {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+label {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#create-account-btn {
+    color: white;
+    background-color: #596D48;
+    font-size: 15px;
+    font-size: bold;
+    padding: 15px 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
     margin-left: 50px;
 }
 
-.bottom-right {
-    background-color: #fbfafa;
+#log-in-text {
+    margin-left: 50px;
+}
+
+#log-in-text a {
+    color: #596D48;
+    font-style: 900;
+    text-decoration: none;
 }
 
 label,input {
     display: flex;
     flex-direction: row;
-}
-
-.right-form {
-    float: left;
-    display: block;
 }
